@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+    overflow:hidden ;
+
+}
+.gamecontainer{
+    background-image: url(1700.jpg);
+background-size: 100vh 100vw;
+width: 100%;
+height: 100vh;
+}
+.advik{
+    background-image: url(advik2-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: -17px;
+    left: 70px;
+}
+.obstacle{
+    background-image: url(alein-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    
+}
+.obstacleani{
+    animation: obstacleani 5s linear infinite;
+}
+.animateadvik{
+    animation:advik 0.6s linear;
+}
+.gameover{
+    visibility: hidden;
+}
+.scorecount{
+    background-size: auto;
+}
+@keyframes advik{
+    0%{
+        bottom:0;
+    }
+    50%{
+        bottom: 422px;
+    }
+    100%{
+        bottom:0;
+    }
+}
+@keyframes obstacleani{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
