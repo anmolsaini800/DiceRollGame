@@ -32,8 +32,13 @@ height: 100vh;
     position: absolute;
     bottom: 0;
     left: 50vw;
-    
 }
+
+.hide{
+
+    display: block;
+}
+
 .obstacleani{
     animation: obstacleani 5s linear infinite;
 }
@@ -42,9 +47,6 @@ height: 100vh;
 }
 .gameover{
     visibility: hidden;
-}
-.scorecount{
-    background-size: auto;
 }
 @keyframes advik{
     0%{
