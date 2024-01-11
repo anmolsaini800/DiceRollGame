@@ -33,6 +33,15 @@ height: 100vh;
     bottom: 0;
     left: 50vw;
 }
+#scorecount{
+    position: absolute;
+    left: 30px;
+    top: 31px;
+    border: 2px solid black;
+    width: 112px;
+    font-weight: bold;
+    border-radius: 10px;
+}
 
 .obstacleani{
     animation: obstacleani 5s linear infinite;
@@ -41,7 +50,12 @@ height: 100vh;
     animation:advik 0.6s linear;
 }
 .gameover{
-    visibility: hidden;
+    position: relative;
+    top: 63px;
+    font-size: 30px;
+    text-align: center;
+
+
 }
 @keyframes advik{
     0%{
